@@ -81,7 +81,7 @@ export default function JobPage() {
     setMessages([...messages, newMessage]);
     setMessageInput('');
 
-    // Simulate bot response (for demo purposes)
+    // bot response 
     setTimeout(() => {
       const botResponse: Message = {
         id: messages.length + 2,
@@ -92,7 +92,7 @@ export default function JobPage() {
     }, 1000);
   };
 
-  // Auto-scroll to the bottom when messages change
+  
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
@@ -103,10 +103,10 @@ export default function JobPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 flex flex-col overflow-hidden">
       <div className="flex flex-col lg:flex-row flex-1 w-full gap-6 p-4 md:p-6 overflow-hidden">
-        {/* Job Details Card */}
+        
         <div className="lg:w-3/4 w-full overflow-y-auto">
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-            {/* Job Header with Gradient */}
+            {/* Gradient Header*/}
             <div className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 md:p-8 text-white">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
@@ -129,9 +129,9 @@ export default function JobPage() {
               </div>
             </div>
 
-            {/* Job Content */}
+            {/*  Content */}
             <div className="p-6 md:p-8">
-              {/* Meta Information */}
+              
               <div className="flex flex-wrap gap-4 mb-6 text-sm text-gray-600">
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -147,7 +147,7 @@ export default function JobPage() {
                 </div>
               </div>
 
-              {/* Job Details Grid */}
+             
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-gray-50 p-4 rounded-xl">
                   <h3 className="font-semibold text-gray-700 mb-3 flex items-center">
@@ -197,7 +197,7 @@ export default function JobPage() {
                 </div>
               </div>
 
-              {/* Skills Section */}
+              {/* Skills */}
               <div className="mb-8">
                 <h2 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">Required Skills</h2>
                 <div className="flex flex-wrap gap-3">
@@ -212,7 +212,7 @@ export default function JobPage() {
                 </div>
               </div>
 
-              {/* Hiring Contact */}
+              {/* Hiring Contact info */}
               <div className="bg-blue-50 rounded-xl p-6 mb-8">
                 <h2 className="text-xl font-semibold text-gray-800 mb-4">Hiring Contact</h2>
                 <div className="flex items-start">
@@ -238,7 +238,7 @@ export default function JobPage() {
                 </div>
               </div>
 
-              {/* Call to Action */}
+              {/* footer button for apply */}
               <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6 text-center border border-blue-100">
                 <h3 className="text-xl font-semibold text-gray-800 mb-3">Ready to apply?</h3>
                 <p className="text-gray-600 mb-5">This position is accepting applications through our platform.</p>
@@ -253,7 +253,7 @@ export default function JobPage() {
         {/* Chat Window */}
         {!isChatClosed && (
           <div className="hidden md:block md:w-1/4 w-full bg-white rounded-2xl shadow-lg flex flex-col border border-gray-100">
-            {/* Sticky Chat Header */}
+           
             <div className="sticky top-0 z-10 flex justify-between items-center p-4 bg-gradient-to-r from-indigo-500 to-blue-600 text-white rounded-t-2xl shadow-sm">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-indigo-600">
