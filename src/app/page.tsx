@@ -302,9 +302,7 @@ export default function JobPage() {
                   Hiring Contact
                 </h2>
                 <div className="flex items-start">
-                  <div className="w-14 h-14 bg-blue-100 rounded-full mr-4 flex items-center justify-center text-blue-600 font-bold text-xl">
-                   
-                  </div>
+                  <div className="w-14 h-14 bg-blue-100 rounded-full mr-4 flex items-center justify-center text-blue-600 font-bold text-xl"></div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-800">
                       {jobData.contact.name}
